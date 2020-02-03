@@ -86,11 +86,13 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+* {
+  box-sizing: border-box;
+}
 .container {
   width: 800px;
   margin: 0 auto;
   border: black 1px solid;
-  min-height: 100vh;
 }
 .mainHeader nav {
   width: 100%;
@@ -165,14 +167,37 @@ footer nav {
 .testimonials {
   width: 100%;
   display: flex;
-  flex-wrap: 45%;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 .testimonials div {
   width: 45%;
+  font-size: 1.2rem;
+  padding: 5% 0;
+  margin: 2% 0;
+  border: 1px red solid;
 }
-.container footer {
-  margin-top: 100%;
+.container .basic {
+  width: 60%;
+  margin: 5% auto;
+  border: 1px black solid;
+  padding: 8% 5%;
+  font-size: 1.4rem;
+}
+.container .features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.container .features .feature {
+  width: 45%;
+  margin: 5% 0;
+  padding: 2%;
+  border: 1px solid black;
+}
+.container .features .feature h2 {
+  font-size: 1.6rem;
+  text-align: center;
 }
 .container .contactForm {
   padding: 5% 0;
