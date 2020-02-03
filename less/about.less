@@ -1,0 +1,24 @@
+.container {
+    .basic {
+        width: 60%;
+        margin: 5% auto;
+        border: 1px black solid;
+        padding: 8% 5%;
+        font-size: @big-text;
+    }
+    .features {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .feature {
+            width: 45%;
+            margin: 5% 0;
+            padding: 2%;
+            border: 1px solid black;
+            h2 {
+                font-size: @box-header;
+                text-align: center;
+            }
+        }
+    }
+}

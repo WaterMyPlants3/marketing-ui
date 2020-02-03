@@ -1,0 +1,238 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  width: 800px;
+  margin: 0 auto;
+  border: black 1px solid;
+}
+.mainHeader nav {
+  width: 100%;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  padding: 2% 0;
+  border: 1px black solid;
+}
+.mainHeader nav a {
+  margin: 0 2%;
+}
+.mainHeader .cta {
+  width: 100%;
+  border: 1px black solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainHeader .cta h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 5% 0 5%;
+}
+.mainHeader .cta .header-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 5%;
+  border: 1px solid red;
+}
+.mainHeader .cta .header-links .button {
+  margin: 4% 0;
+  border: 1px solid black;
+  text-align: center;
+  padding: 5% 0;
+}
+.mainHeader .cta .header-links .webapp {
+  width: 100%;
+}
+.mainHeader .cta .header-links .app {
+  width: 45%;
+}
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid red;
+}
+footer nav {
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
+}
+.description {
+  padding: 4%;
+  border: red solid 1px;
+}
+.description h2 {
+  font-size: 1.8rem;
+}
+.description p {
+  font-size: 1.2rem;
+}
+.description ul {
+  list-style-position: inside;
+}
+.description ul li {
+  font-size: 1.2rem;
+}
+.testimonials {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.testimonials div {
+  width: 45%;
+  font-size: 1.2rem;
+  padding: 5% 0;
+  margin: 2% 0;
+  border: 1px red solid;
+}
+.container .basic {
+  width: 60%;
+  margin: 5% auto;
+  border: 1px black solid;
+  padding: 8% 5%;
+  font-size: 1.4rem;
+}
+.container .features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.container .features .feature {
+  width: 45%;
+  margin: 5% 0;
+  padding: 2%;
+  border: 1px solid black;
+}
+.container .features .feature h2 {
+  font-size: 1.6rem;
+  text-align: center;
+}
+.container .contactForm {
+  padding: 5% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin-left: 26%;
+  margin-top: 5%;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+.container .contactForm form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.container .contactForm form input[type="text"],
+.container .contactForm form input[type="email"] {
+  font-size: 14px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 1px solid #dedede;
+}
+.container .contactForm form input[type="submit"] {
+  background-color: #4285f4;
+  color: white;
+  height: 36px;
+  width: 88px;
+  border: none;
+  border-radius: 3px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.container footer {
+  margin-top: 20%;
+}
