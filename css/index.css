@@ -171,8 +171,11 @@ footer nav {
 .testimonials div {
   width: 45%;
 }
-.contactForm {
-  height: 25vh;
+.container footer {
+  margin-top: 100%;
+}
+.container .contactForm {
+  padding: 5% 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -182,19 +185,19 @@ footer nav {
   border: 1px solid black;
   border-radius: 3px;
 }
-.contactForm form {
+.container .contactForm form {
   display: flex;
   flex-direction: column;
   width: 50%;
 }
-.contactForm form input[type="text"],
-.contactForm form input[type="email"] {
+.container .contactForm form input[type="text"],
+.container .contactForm form input[type="email"] {
   font-size: 14px;
   margin: 10px 0;
   border: none;
   border-bottom: 1px solid #dedede;
 }
-.contactForm form input[type="submit"] {
+.container .contactForm form input[type="submit"] {
   background-color: #4285f4;
   color: white;
   height: 36px;
@@ -205,6 +208,6 @@ footer nav {
   margin-top: 10px;
   margin-bottom: 20px;
 }
-footer {
+.container footer {
   margin-top: 20%;
 }
