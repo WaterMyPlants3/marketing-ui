@@ -1,0 +1,136 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+.container {
+  width: 800px;
+  margin: 0 auto;
+  border: black 1px solid;
+  min-height: 100vw;
+}
+.mainHeader nav {
+  width: 100%;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  padding: 2% 0;
+  border: 1px black solid;
+}
+.mainHeader nav a {
+  margin: 0 2%;
+}
+.mainHeader .cta {
+  width: 100%;
+  border: 1px black solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainHeader .cta h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 5% 0 5%;
+}
+.mainHeader .cta .header-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 5%;
+  border: 1px solid red;
+}
+.mainHeader .cta .header-links .button {
+  margin: 4% 0;
+  border: 1px solid black;
+  text-align: center;
+  padding: 5% 0;
+}
+.mainHeader .cta .header-links .webapp {
+  width: 100%;
+}
+.mainHeader .cta .header-links .app {
+  width: 45%;
+}
