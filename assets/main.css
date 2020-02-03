@@ -22,7 +22,11 @@ time, mark, audio, video {
 /* RESET END */
 
 
-
+.mainHeader{
+    background-image: url(headerImg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 101%;
+}   
 .mainHeader h1{
     width: 100%;
     text-align: center;
@@ -30,27 +34,33 @@ time, mark, audio, video {
     box-sizing: border-box;
     padding: 2%;
     font-size: 45px;
+    padding-top: 7%;
 }
 .mainHeader .headerNav{
     display: flex;
     border: 2px solid rgb(0, 225, 255);
-    padding: 1%;
-    
+    padding: 9%;
+    padding-top: 1%;
+    justify-content: end;
+    width: 100%;
 }
 .mainHeader .headerNav a{
-    text-align: center;
-    justify-content: space-evenly;
-    margin:0 auto;
+    text-align: center;   
+    /* margin:0 auto; */
     width:10%;
     font-size: 25px;
     border: 2px solid black;
     border-radius: 25%;
-    padding: .5%;
+    padding: 0.5%;
     text-decoration: none;
     color:black;
-
 }
 
+.mainHeader .productName{
+    width: 75%;
+    margin: auto;
+    box-sizing: border-box;
+}
 
 .mainContentContainer{
     margin: auto;
@@ -59,51 +69,6 @@ time, mark, audio, video {
     padding: 3%;
 }
 
-.mainContentContainer .description{
-    width:75% ;
-    border: 2px solid teal;
-    margin: auto;
-    
-}
-.mainContentContainer .description h2{
-    width: 45%;
-    font-size: 30px;
-    text-align: center;
-    margin: auto;
-    
-}
-
-.mainContentContainer .description p{
-    font-size: 20px;
-    text-align: center;
-    
-}
-
-.mainContentContainer .description .descImg{
-    padding-left: 20%;
-}
-
-.mainContentContainer .features{
-    border: 2px solid red;
-    padding-bottom: 1%;
-}
-
-.mainContentContainer .features h2{
-    padding-top: 2%;
-    text-align: center;
-    font-size: 30px
-}
-
-.mainContentContainer .features ul{
-    padding:0% 26%;
-    font-size: 20px;
-}
-
-.mainContentContainer .btn{
-    padding-top:3%;
-    align-content: center;
-}
-
-.mainContentContainer .btn button{
-    padding: 1%;
+.links img{
+    width: 15%;
 }
