@@ -162,3 +162,12 @@ footer nav {
 .description ul li {
   font-size: 1.2rem;
 }
+.testimonials {
+  width: 100%;
+  display: flex;
+  flex-wrap: 45%;
+  justify-content: space-around;
+}
+.testimonials div {
+  width: 45%;
+}
