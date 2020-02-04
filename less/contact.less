@@ -6,8 +6,9 @@
         align-items: center;
         width: 50%;
         margin: 15% auto;
-        border: 1px solid black;
+        box-shadow: inset 4px 1px 3px 4px grey;
         border-radius: 3px;
+        background: #89CC7C;
         @media @tablet {
             margin-bottom: 44%;
         }
@@ -20,6 +21,12 @@
             flex-direction: column;
             width: 50%;
             input[type="text"], input[type="email"] {
+                font-size: 14px;
+                margin: 10px 0;
+                border: none;
+                border-bottom: 1px solid #dedede;
+            }
+            #messageArea{
                 font-size: 14px;
                 margin: 10px 0;
                 border: none;

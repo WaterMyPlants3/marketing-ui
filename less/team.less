@@ -1,0 +1,40 @@
+.container {
+    .teamHead {
+        width: 60%;
+        margin: 5% auto;
+        padding: 8% 5%;
+        font-size: @big-text;
+        text-align: center;
+        color: white;
+    }
+    .features {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .member {
+            width: 45%;
+            margin: 5% 0;
+            padding: 2%;
+            border: 1px solid black;
+            border-radius: 20%;
+            background-color: #487346;
+            text-align: center;
+            color: white;
+            h2 {
+                font-size: @box-header;
+                text-align: center;
+                color: white;
+            }
+            img{
+                width: 50%;
+            }
+            a img{
+                width: 15%;
+            }
+            @media @mobile {
+                width: 95%;
+                padding: 6% 4%;
+            }
+        }
+    }
+}
