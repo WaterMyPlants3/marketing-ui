@@ -94,6 +94,11 @@ video {
   margin: 0 auto;
   border: black 1px solid;
 }
+@media ( max-width: 800px ) {
+  .container {
+    width: 100%;
+  }
+}
 .mainHeader nav {
   width: 100%;
   display: flex;
@@ -101,6 +106,11 @@ video {
   align-items: center;
   padding: 2% 0;
   border: 1px black solid;
+}
+@media ( max-width: 800px ) {
+  .mainHeader nav {
+    justify-content: space-evenly;
+  }
 }
 .mainHeader nav a {
   margin: 0 2%;
@@ -170,12 +180,22 @@ footer nav {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+@media ( max-width: 500px ) {
+  .testimonials .review-image {
+    display: none;
+  }
+}
 .testimonials div {
   width: 45%;
   font-size: 1.2rem;
   padding: 5% 0;
   margin: 2% 0;
   border: 1px red solid;
+}
+@media ( max-width: 500px ) {
+  .testimonials div {
+    width: 95%;
+  }
 }
 .container .basic {
   width: 60%;
