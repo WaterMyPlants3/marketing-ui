@@ -1,5 +1,10 @@
 .description {
     padding: 4%;
+    width: 95%;
+    margin: 5% auto;
+    border-radius: 10px;
+    background-color: @box-background;
+    .drop-shadow();
     h2 {
         font-size: @section-header;
     }
@@ -12,8 +17,6 @@
             font-size: @main-text;
         }
     }
-    // Testing values -- Remove before project done--
-    border: red solid 1px
 }
 
 .testimonials {
@@ -21,11 +24,24 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    div {
-        width: 45%;
-        font-size: @main-text;
-        padding: 5% 0;
-        margin: 2% 0;
-        border: 1px red solid;
+    
+    .review-image {
+        .review-box-mixin();
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        @media @mobile  {
+            display: none;           
+        }
+    }
+    .review {
+        .review-box-mixin();
+        background-color: @box-background;
+        padding: 2% 2%;
+        h2 {
+            font-size: @box-header;
+            margin-bottom: 2%;
+        }
     }
 }

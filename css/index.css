@@ -1,3 +1,28 @@
+.drop-shadow {
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
+}
+.button-shadow {
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
+}
+.button-shadow:active {
+  box-shadow: none;
+}
+.container-shadow {
+  box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.5), -2px 0px 3px rgba(0, 0, 0, 0.5);
+}
+.review-box-mixin {
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
+  max-height: 360px;
+  width: 45%;
+  font-size: 1.2rem;
+  margin: 2% 0;
+  border-radius: 10px;
+}
+@media ( max-width: 500px ) {
+  .review-box-mixin {
+    width: 95%;
+  }
+}
 html,
 body,
 div,
@@ -89,10 +114,21 @@ video {
 * {
   box-sizing: border-box;
 }
+body {
+  background-color: linen;
+}
 .container {
   width: 800px;
   margin: 0 auto;
-  border: black 1px solid;
+  background-image: url('../assets/background.svg');
+  background-attachment: fixed;
+  background-position: center;
+  box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.5), -2px 0px 3px rgba(0, 0, 0, 0.5);
+}
+@media ( max-width: 800px ) {
+  .container {
+    width: 100%;
+  }
 }
 .mainHeader nav {
   width: 100%;
@@ -102,39 +138,68 @@ video {
   padding: 2% 0;
   border: 1px black solid;
 }
+@media ( max-width: 800px ) {
+  .mainHeader nav {
+    justify-content: space-evenly;
+  }
+}
 .mainHeader nav a {
   margin: 0 2%;
 }
 .mainHeader .cta {
   width: 100%;
-  border: 1px black solid;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url('../assets/header.jpg');
+  background-size: cover;
+  background-position: center center;
 }
 .mainHeader .cta h1 {
   font-size: 3rem;
   text-align: center;
   margin: 5% 0 5%;
+  padding: 2%;
+  background-color: white;
+  border-radius: 10px;
+}
+@media ( max-width: 500px ) {
+  .mainHeader .cta h1 {
+    font-size: 2rem;
+  }
 }
 .mainHeader .cta .header-links {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 5%;
-  border: 1px solid red;
+  width: 40%;
 }
 .mainHeader .cta .header-links .button {
   margin: 4% 0;
-  border: 1px solid black;
   text-align: center;
-  padding: 5% 0;
+}
+.mainHeader .cta .header-links .button img {
+  max-width: 100%;
 }
 .mainHeader .cta .header-links .webapp {
   width: 100%;
+  padding: 10% 5%;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
+}
+.mainHeader .cta .header-links .webapp:active {
+  box-shadow: none;
 }
 .mainHeader .cta .header-links .app {
   width: 45%;
+}
+@media ( max-width: 500px ) {
+  .mainHeader .cta .header-links .app {
+    width: 70%;
+    margin: 2% auto;
+  }
 }
 footer {
   width: 100%;
@@ -150,7 +215,11 @@ footer nav {
 }
 .description {
   padding: 4%;
-  border: red solid 1px;
+  width: 95%;
+  margin: 5% auto;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
 }
 .description h2 {
   font-size: 1.8rem;
@@ -170,12 +239,46 @@ footer nav {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.testimonials div {
+.testimonials .review-image {
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
+  max-height: 360px;
   width: 45%;
   font-size: 1.2rem;
-  padding: 5% 0;
   margin: 2% 0;
-  border: 1px red solid;
+  border-radius: 10px;
+}
+@media ( max-width: 500px ) {
+  .testimonials .review-image {
+    width: 95%;
+  }
+}
+.testimonials .review-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+@media ( max-width: 500px ) {
+  .testimonials .review-image {
+    display: none;
+  }
+}
+.testimonials .review {
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
+  max-height: 360px;
+  width: 45%;
+  font-size: 1.2rem;
+  margin: 2% 0;
+  border-radius: 10px;
+  background-color: white;
+  padding: 2% 2%;
+}
+@media ( max-width: 500px ) {
+  .testimonials .review {
+    width: 95%;
+  }
+}
+.testimonials .review h2 {
+  font-size: 1.6rem;
+  margin-bottom: 2%;
 }
 .container .basic {
   width: 60%;
@@ -199,16 +302,32 @@ footer nav {
   font-size: 1.6rem;
   text-align: center;
 }
+@media ( max-width: 500px ) {
+  .container .features .feature {
+    width: 95%;
+    padding: 6% 4%;
+  }
+}
 .container .contactForm {
   padding: 5% 0;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50%;
-  margin-left: 26%;
-  margin-top: 5%;
+  margin: 15% auto;
   border: 1px solid black;
   border-radius: 3px;
+}
+@media ( max-width: 800px ) {
+  .container .contactForm {
+    margin-bottom: 44%;
+  }
+}
+@media ( max-width: 500px ) {
+  .container .contactForm {
+    width: 80%;
+    margin: 35% auto;
+  }
 }
 .container .contactForm form {
   display: flex;
@@ -232,7 +351,4 @@ footer nav {
   font-weight: 500;
   margin-top: 10px;
   margin-bottom: 20px;
-}
-.container footer {
-  margin-top: 20%;
 }
