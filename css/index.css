@@ -4,6 +4,18 @@
 .button-shadow:active {
   box-shadow: none;
 }
+.review-box-mixin {
+  width: 45%;
+  font-size: 1.2rem;
+  margin: 2% 0;
+  border: 1px red solid;
+  border-radius: 10px;
+}
+@media ( max-width: 500px ) {
+  .review-box-mixin {
+    width: 95%;
+  }
+}
 html,
 body,
 div,
@@ -191,6 +203,9 @@ footer nav {
 }
 .description {
   padding: 4%;
+  width: 95%;
+  margin: 5% auto;
+  border-radius: 10px;
   border: red solid 1px;
 }
 .description h2 {
@@ -211,22 +226,43 @@ footer nav {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+.testimonials .review-image {
+  width: 45%;
+  font-size: 1.2rem;
+  margin: 2% 0;
+  border: 1px red solid;
+  border-radius: 10px;
+}
+@media ( max-width: 500px ) {
+  .testimonials .review-image {
+    width: 95%;
+  }
+}
+.testimonials .review-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
 @media ( max-width: 500px ) {
   .testimonials .review-image {
     display: none;
   }
 }
-.testimonials div {
+.testimonials .review {
   width: 45%;
   font-size: 1.2rem;
-  padding: 5% 0;
   margin: 2% 0;
   border: 1px red solid;
+  border-radius: 10px;
+  padding: 2% 2%;
 }
 @media ( max-width: 500px ) {
-  .testimonials div {
+  .testimonials .review {
     width: 95%;
   }
+}
+.testimonials .review h2 {
+  font-size: 1.6rem;
+  margin-bottom: 2%;
 }
 .container .basic {
   width: 60%;

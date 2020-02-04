@@ -1,5 +1,8 @@
 .description {
     padding: 4%;
+    width: 95%;
+    margin: 5% auto;
+    border-radius: 10px;
     h2 {
         font-size: @section-header;
     }
@@ -21,19 +24,23 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    @media @mobile {
-        .review-image {
-            display: none;
+    
+    .review-image {
+        .review-box-mixin();
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        @media @mobile  {
+            display: none;           
         }
     }
-    div {
-        width: 45%;
-        font-size: @main-text;
-        padding: 5% 0;
-        margin: 2% 0;
-        border: 1px red solid;
-        @media @mobile {
-            width: 95%
+    .review {
+        .review-box-mixin();
+        padding: 2% 2%;
+        h2 {
+            font-size: @box-header;
+            margin-bottom: 2%;
         }
     }
 }
