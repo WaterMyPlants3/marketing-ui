@@ -376,7 +376,7 @@ footer nav {
   width: 45%;
   margin: 5% 0;
   padding: 2%;
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 20%;
   background-color: #487346;
   text-align: center;
@@ -389,6 +389,7 @@ footer nav {
 }
 .container .features .member img {
   width: 50%;
+  border-radius: 50%;
 }
 .container .features .member a img {
   width: 15%;
