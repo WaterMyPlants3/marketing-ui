@@ -132,13 +132,16 @@ video {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 5%;
+  width: 40%;
   border: 1px solid red;
 }
 .mainHeader .cta .header-links .button {
   margin: 4% 0;
   border: 1px solid black;
   text-align: center;
-  padding: 5% 0;
+}
+.mainHeader .cta .header-links .button img {
+  max-width: 100%;
 }
 .mainHeader .cta .header-links .webapp {
   width: 100%;
