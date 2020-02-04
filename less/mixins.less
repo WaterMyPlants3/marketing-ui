@@ -1,8 +1,17 @@
 .drop-shadow {
     box-shadow: 1px 3px 3px @shadow-color;
+}
+
+.button-shadow {
+    box-shadow: 1px 3px 3px @shadow-color;
     &:active {
         box-shadow: none;
     }
+}
+
+.container-shadow {
+    box-shadow: 2px 0px 3px @shadow-color,
+    -2px 0px 3px @shadow-color;
 }
 
 .review-box-mixin {

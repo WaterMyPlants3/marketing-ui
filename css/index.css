@@ -1,8 +1,14 @@
 .drop-shadow {
   box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
 }
-.drop-shadow:active {
+.button-shadow {
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
+}
+.button-shadow:active {
   box-shadow: none;
+}
+.container-shadow {
+  box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.5), -2px 0px 3px rgba(0, 0, 0, 0.5);
 }
 .review-box-mixin {
   box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
@@ -11,9 +17,6 @@
   font-size: 1.2rem;
   margin: 2% 0;
   border-radius: 10px;
-}
-.review-box-mixin:active {
-  box-shadow: none;
 }
 @media ( max-width: 500px ) {
   .review-box-mixin {
@@ -120,6 +123,7 @@ body {
   background-image: url('../assets/background.svg');
   background-attachment: fixed;
   background-position: center;
+  box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.5), -2px 0px 3px rgba(0, 0, 0, 0.5);
 }
 @media ( max-width: 800px ) {
   .container {
@@ -144,7 +148,6 @@ body {
 }
 .mainHeader .cta {
   width: 100%;
-  border: 1px black solid;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -218,9 +221,6 @@ footer nav {
   background-color: white;
   box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
 }
-.description:active {
-  box-shadow: none;
-}
 .description h2 {
   font-size: 1.8rem;
 }
@@ -247,9 +247,6 @@ footer nav {
   margin: 2% 0;
   border-radius: 10px;
 }
-.testimonials .review-image:active {
-  box-shadow: none;
-}
 @media ( max-width: 500px ) {
   .testimonials .review-image {
     width: 95%;
@@ -273,9 +270,6 @@ footer nav {
   border-radius: 10px;
   background-color: white;
   padding: 2% 2%;
-}
-.testimonials .review:active {
-  box-shadow: none;
 }
 @media ( max-width: 500px ) {
   .testimonials .review {
