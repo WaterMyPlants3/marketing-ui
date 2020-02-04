@@ -3,11 +3,16 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    // Testing values -- Remove before project done--
-    border: 1px solid red;
+    background-color: @box-background;
     nav {
         width: 25%;
         display: flex;
         justify-content: space-around;
+        a {
+            text-decoration: none;
+            color: @text-color;
+            font-size: @main-text;
+            margin: 0 10%;
+        }
     }
 }

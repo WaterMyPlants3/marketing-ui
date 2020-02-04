@@ -136,7 +136,7 @@ body {
   justify-content: baseline;
   align-items: center;
   padding: 2% 0;
-  border: 1px black solid;
+  background-color: white;
 }
 @media ( max-width: 800px ) {
   .mainHeader nav {
@@ -144,7 +144,13 @@ body {
   }
 }
 .mainHeader nav a {
+  text-decoration: none;
+  color: black;
   margin: 0 2%;
+  font-size: 1.5rem;
+}
+.mainHeader nav a:first-child {
+  margin-left: 3%;
 }
 .mainHeader .cta {
   width: 100%;
@@ -160,12 +166,12 @@ body {
   text-align: center;
   margin: 5% 0 5%;
   padding: 2%;
-  background-color: white;
+  background-color: #89CC7C;
   border-radius: 10px;
 }
 @media ( max-width: 500px ) {
   .mainHeader .cta h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 }
 .mainHeader .cta .header-links {
@@ -174,6 +180,11 @@ body {
   justify-content: space-between;
   margin-bottom: 5%;
   width: 40%;
+}
+@media ( max-width: 500px ) {
+  .mainHeader .cta .header-links {
+    width: 60%;
+  }
 }
 .mainHeader .cta .header-links .button {
   margin: 4% 0;
@@ -186,7 +197,10 @@ body {
   width: 100%;
   padding: 10% 5%;
   border-radius: 20px;
-  background-color: white;
+  background-color: #487346;
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
   box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
 }
 .mainHeader .cta .header-links .webapp:active {
@@ -206,12 +220,18 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid red;
+  background-color: white;
 }
 footer nav {
   width: 25%;
   display: flex;
   justify-content: space-around;
+}
+footer nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  margin: 0 10%;
 }
 .description {
   padding: 4%;
@@ -276,9 +296,19 @@ footer nav {
     width: 95%;
   }
 }
-.testimonials .review h2 {
+.testimonials .review .reviewer {
+  display: flex;
+  align-items: center;
+}
+.testimonials .review .reviewer h2 {
   font-size: 1.6rem;
   margin-bottom: 2%;
+}
+.testimonials .review .reviewer img {
+  max-width: 10%;
+  border-radius: 50%;
+  margin-right: 3%;
+  padding-bottom: 2%;
 }
 .container .basic {
   width: 60%;

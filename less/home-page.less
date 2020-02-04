@@ -39,9 +39,19 @@
         .review-box-mixin();
         background-color: @box-background;
         padding: 2% 2%;
-        h2 {
-            font-size: @box-header;
-            margin-bottom: 2%;
+        .reviewer{
+            display: flex;
+            align-items: center;
+            h2 {
+                font-size: @box-header;
+                margin-bottom: 2%;
+            }
+            img {
+                max-width: 10%;
+                border-radius: 50%;
+                margin-right: 3%;
+                padding-bottom: 2%;
+            }
         }
     }
 }
