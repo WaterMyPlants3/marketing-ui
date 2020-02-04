@@ -1,6 +1,6 @@
 .mainHeader {
     nav {
-        width: 800px;
+        width: 100%;
         display: flex; 
         justify-content: baseline;
         align-items: center;
@@ -35,7 +35,7 @@
             background-color: @title-background;
             border-radius: 10px;
             @media @mobile{
-                font-size: 2rem;
+                font-size: 3rem;
             }
         }
         .header-links {
@@ -44,6 +44,9 @@
             justify-content: space-between;
             margin-bottom: 5%;
             width: 40%;
+            @media @mobile {
+                width: 60%;
+            }
             .button {
                 margin: 4% 0; 
                 text-align: center;
