@@ -1,15 +1,16 @@
-.button-shadow {
-    box-shadow: 1px 3px 3px grey;
+.drop-shadow {
+    box-shadow: 1px 3px 3px @shadow-color;
     &:active {
         box-shadow: none;
     }
 }
 
 .review-box-mixin {
+    .drop-shadow();
+    max-height: 360px;
     width: 45%;
     font-size: @main-text;
     margin: 2% 0;
-    border: 1px red solid;
     border-radius: 10px;
     @media @mobile {
         width: 95%

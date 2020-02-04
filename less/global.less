@@ -21,17 +21,22 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 
+// Global page styling
+
 * {
     box-sizing: border-box;
 }
 
-// Global page styling
+body {
+    background-color: @body-background;
+}
 
 .container {
     width: 800px;
     margin: 0 auto;
-    // Testing values -- Remove before project done--
-    border: black 1px solid;
+    background-image: url('../assets/background.svg');
+    background-attachment: fixed;
+    background-position: center;
     @media @tablet {
         width: 100%;
     }

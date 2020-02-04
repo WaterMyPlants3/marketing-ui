@@ -1,15 +1,19 @@
-.button-shadow {
-  box-shadow: 1px 3px 3px grey;
+.drop-shadow {
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
 }
-.button-shadow:active {
+.drop-shadow:active {
   box-shadow: none;
 }
 .review-box-mixin {
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
+  max-height: 360px;
   width: 45%;
   font-size: 1.2rem;
   margin: 2% 0;
-  border: 1px red solid;
   border-radius: 10px;
+}
+.review-box-mixin:active {
+  box-shadow: none;
 }
 @media ( max-width: 500px ) {
   .review-box-mixin {
@@ -107,10 +111,15 @@ video {
 * {
   box-sizing: border-box;
 }
+body {
+  background-color: linen;
+}
 .container {
   width: 800px;
   margin: 0 auto;
-  border: black 1px solid;
+  background-image: url('../assets/background.svg');
+  background-attachment: fixed;
+  background-position: center;
 }
 @media ( max-width: 800px ) {
   .container {
@@ -175,7 +184,7 @@ video {
   padding: 10% 5%;
   border-radius: 20px;
   background-color: white;
-  box-shadow: 1px 3px 3px grey;
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
 }
 .mainHeader .cta .header-links .webapp:active {
   box-shadow: none;
@@ -206,7 +215,11 @@ footer nav {
   width: 95%;
   margin: 5% auto;
   border-radius: 10px;
-  border: red solid 1px;
+  background-color: white;
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
+}
+.description:active {
+  box-shadow: none;
 }
 .description h2 {
   font-size: 1.8rem;
@@ -227,11 +240,15 @@ footer nav {
   justify-content: space-around;
 }
 .testimonials .review-image {
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
+  max-height: 360px;
   width: 45%;
   font-size: 1.2rem;
   margin: 2% 0;
-  border: 1px red solid;
   border-radius: 10px;
+}
+.testimonials .review-image:active {
+  box-shadow: none;
 }
 @media ( max-width: 500px ) {
   .testimonials .review-image {
@@ -248,12 +265,17 @@ footer nav {
   }
 }
 .testimonials .review {
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
+  max-height: 360px;
   width: 45%;
   font-size: 1.2rem;
   margin: 2% 0;
-  border: 1px red solid;
   border-radius: 10px;
+  background-color: white;
   padding: 2% 2%;
+}
+.testimonials .review:active {
+  box-shadow: none;
 }
 @media ( max-width: 500px ) {
   .testimonials .review {

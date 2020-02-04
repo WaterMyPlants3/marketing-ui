@@ -3,6 +3,8 @@
     width: 95%;
     margin: 5% auto;
     border-radius: 10px;
+    background-color: @box-background;
+    .drop-shadow();
     h2 {
         font-size: @section-header;
     }
@@ -15,8 +17,6 @@
             font-size: @main-text;
         }
     }
-    // Testing values -- Remove before project done--
-    border: red solid 1px
 }
 
 .testimonials {
@@ -37,6 +37,7 @@
     }
     .review {
         .review-box-mixin();
+        background-color: @box-background;
         padding: 2% 2%;
         h2 {
             font-size: @box-header;
