@@ -279,7 +279,7 @@ footer nav a {
 .description h2 {
   font-size: 3rem;
 }
-.description p {
+.description .copy {
   font-size: 1.3rem;
   margin-bottom: 3%;
 }
@@ -338,7 +338,7 @@ footer nav a {
 .testimonials .review .rating {
   width: 100%;
   text-align: center;
-  margin: 10% auto 0;
+  margin: 5% auto 0;
   height: 40px;
 }
 @media ( max-width: 500px ) {
