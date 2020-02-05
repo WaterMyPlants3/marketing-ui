@@ -372,12 +372,16 @@ footer nav a {
   margin: 10px 0;
   border: none;
   border-bottom: 1px solid #dedede;
+  background-color: #B6CC76;
+  color: white;
 }
 .container .contactForm form #messageArea {
   font-size: 14px;
   margin: 10px 0;
   border: none;
   border-bottom: 1px solid #dedede;
+  background-color: #B6CC76;
+  color: white;
 }
 .container .contactForm form input[type="submit"] {
   background-color: #4285f4;
