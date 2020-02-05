@@ -1,6 +1,9 @@
 .drop-shadow {
   box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
 }
+.hover-shadow {
+  box-shadow: 8px 3px 3px rgba(0, 0, 0, 0.5);
+}
 .button-shadow {
   box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
 }
@@ -336,10 +339,12 @@ footer nav a {
   padding-bottom: 2%;
 }
 .container .basic {
-  width: 60%;
+  width: 70%;
   margin: 5% auto;
   padding: 8% 5%;
-  font-size: 1.4rem;
+  font-size: 2.2rem;
+  text-align: center;
+  font-weight: 800;
   background-color: white;
   border-radius: 10px;
   box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
@@ -358,10 +363,16 @@ footer nav a {
   width: 65%;
   margin: 5% 5%;
   padding: 5%;
+  font-size: 1.3rem;
   background-color: white;
   border-radius: 10px;
+  line-height: 1.5;
   box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
-  font-size: 1.3rem;
+}
+.container .features .feature:hover {
+  box-shadow: 8px 3px 3px rgba(0, 0, 0, 0.5);
+  margin-right: 6%;
+  margin-left: 4%;
 }
 @media ( max-width: 500px ) {
   .container .features .feature {
@@ -378,6 +389,7 @@ footer nav a {
 }
 .container .features .feature h2 {
   font-size: 1.6rem;
+  font-weight: bold;
   text-align: center;
 }
 @media ( max-width: 500px ) {
@@ -445,7 +457,7 @@ footer nav a {
   width: 60%;
   margin: 5% auto;
   padding: 8% 5%;
-  font-size: 1.4rem;
+  font-size: 2.2rem;
   text-align: center;
   color: white;
 }
