@@ -35,7 +35,7 @@
             background-color: @title-background;
             border-radius: 10px;
             @media @mobile{
-                font-size: 3rem;
+                font-size: 2.8rem;
             }
         }
         .header-links {
@@ -62,7 +62,10 @@
                 color: @button-text-color;
                 font-size: @button-text;
                 text-decoration: none;
-                .button-shadow()
+                .button-shadow();
+                @media @mobile {
+                    padding: 5% 2%;
+                }
             }
             .app {
                 width: 45%;
