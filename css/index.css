@@ -113,9 +113,26 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-}
-* {
   box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+@font-face {
+  font-family: 'Amatic SC';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Amatic SC Regular'), local('AmaticSC-Regular'), url(https://fonts.gstatic.com/s/amaticsc/v13/TUZyzwprpvBS1izr_vOECuSa.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Josefin Sans Regular'), local('JosefinSans-Regular'), url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3aZQNVED7rKGKxtqIqX5EUDXx9.ttf) format('truetype');
+}
+h1,
+h2 {
+  font-family: 'Amatic SC', cursive;
 }
 body {
   background-color: linen;
@@ -461,12 +478,12 @@ footer nav a {
   text-align: center;
   color: white;
 }
-.container .features {
+.container .members {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.container .features .member {
+.container .members .member {
   width: 45%;
   margin: 5% 0;
   padding: 2%;
@@ -476,20 +493,20 @@ footer nav a {
   text-align: center;
   color: white;
 }
-.container .features .member h2 {
+.container .members .member h2 {
   font-size: 1.6rem;
   text-align: center;
   color: white;
 }
-.container .features .member img {
+.container .members .member img {
   width: 50%;
   border-radius: 50%;
 }
-.container .features .member a img {
+.container .members .member a img {
   width: 15%;
 }
 @media ( max-width: 500px ) {
-  .container .features .member {
+  .container .members .member {
     width: 95%;
     padding: 6% 4%;
   }

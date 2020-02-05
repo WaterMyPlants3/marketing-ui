@@ -19,12 +19,19 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
     vertical-align: baseline;
+    box-sizing: border-box;
+    font-family: @main-family;
 }
+
+// Font import
+
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Sans&display=swap');
+
 
 // Global page styling
 
-* {
-    box-sizing: border-box;
+h1, h2 {
+    font-family: @header-family;
 }
 
 body {
