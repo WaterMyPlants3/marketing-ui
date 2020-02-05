@@ -2,19 +2,36 @@
     .basic {
         width: 60%;
         margin: 5% auto;
-        border: 1px black solid;
         padding: 8% 5%;
         font-size: @big-text;
+        background-color: @box-background;
+        border-radius: 10px;
+        .drop-shadow();
     }
     .features {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        flex-direction: column;
+        align-items: flex-start;
+        @media @mobile {
+            align-items: center;
+        }
         .feature {
-            width: 45%;
-            margin: 5% 0;
-            padding: 2%;
-            border: 1px solid black;
+            width: 65%;
+            margin: 5% 5%;
+            padding: 5%;
+            background-color: @box-background;
+            border-radius: 10px;
+            .drop-shadow();
+            font-size: @main-text;
+            @media @mobile {
+                margin: 5% 0;
+            }
+            &:nth-child(even) {
+                align-self: flex-end;
+                @media @mobile {
+                    align-self: center;
+                }
+            }
             h2 {
                 font-size: @box-header;
                 text-align: center;

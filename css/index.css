@@ -338,20 +338,43 @@ footer nav a {
 .container .basic {
   width: 60%;
   margin: 5% auto;
-  border: 1px black solid;
   padding: 8% 5%;
   font-size: 1.4rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
 }
 .container .features {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: flex-start;
+}
+@media ( max-width: 500px ) {
+  .container .features {
+    align-items: center;
+  }
 }
 .container .features .feature {
-  width: 45%;
-  margin: 5% 0;
-  padding: 2%;
-  border: 1px solid black;
+  width: 65%;
+  margin: 5% 5%;
+  padding: 5%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
+  font-size: 1.3rem;
+}
+@media ( max-width: 500px ) {
+  .container .features .feature {
+    margin: 5% 0;
+  }
+}
+.container .features .feature:nth-child(even) {
+  align-self: flex-end;
+}
+@media ( max-width: 500px ) {
+  .container .features .feature:nth-child(even) {
+    align-self: center;
+  }
 }
 .container .features .feature h2 {
   font-size: 1.6rem;
