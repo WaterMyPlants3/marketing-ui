@@ -173,6 +173,11 @@ body {
 .mainHeader nav a:first-child {
   margin-left: 3%;
 }
+@media ( max-width: 500px ) {
+  .mainHeader nav a {
+    font-size: 1.3rem;
+  }
+}
 .mainHeader .cta {
   width: 100%;
   display: flex;
@@ -183,7 +188,7 @@ body {
   background-position: center center;
 }
 .mainHeader .cta h1 {
-  font-size: 3rem;
+  font-size: 6rem;
   text-align: center;
   margin: 5% 0 5%;
   padding: 2%;
@@ -192,7 +197,7 @@ body {
 }
 @media ( max-width: 500px ) {
   .mainHeader .cta h1 {
-    font-size: 2.8rem;
+    font-size: 4.2rem;
   }
 }
 .mainHeader .cta .header-links {
@@ -248,6 +253,9 @@ footer {
   align-items: center;
   background-color: white;
 }
+footer p {
+  margin: 0 0 1%;
+}
 footer nav {
   width: 25%;
   display: flex;
@@ -258,7 +266,7 @@ footer nav a {
   text-decoration: none;
   color: black;
   font-size: 1.3rem;
-  margin: 0 10%;
+  margin: 3% 10%;
 }
 .description {
   padding: 4%;
@@ -269,10 +277,11 @@ footer nav a {
   box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
 }
 .description h2 {
-  font-size: 1.8rem;
+  font-size: 3rem;
 }
 .description p {
   font-size: 1.3rem;
+  margin-bottom: 3%;
 }
 .description ul {
   list-style-position: inside;
@@ -346,7 +355,7 @@ footer nav a {
   align-items: center;
 }
 .testimonials .review .reviewer h2 {
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   margin-bottom: 2%;
 }
 .testimonials .review .reviewer img {
@@ -405,7 +414,7 @@ footer nav a {
   }
 }
 .container .features .feature h2 {
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   font-weight: bold;
   text-align: center;
 }
@@ -494,7 +503,7 @@ footer nav a {
   color: white;
 }
 .container .members .member h2 {
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   text-align: center;
   color: white;
 }
