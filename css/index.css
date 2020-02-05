@@ -175,7 +175,7 @@ body {
 }
 @media ( max-width: 500px ) {
   .mainHeader nav a {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
 .mainHeader .cta {
@@ -221,7 +221,7 @@ body {
 }
 .mainHeader .cta .header-links .webapp {
   width: 100%;
-  padding: 10% 5%;
+  padding: 10% 5% 8%;
   border-radius: 20px;
   background-color: #487346;
   color: white;
@@ -234,7 +234,7 @@ body {
 }
 @media ( max-width: 500px ) {
   .mainHeader .cta .header-links .webapp {
-    padding: 5% 2%;
+    padding: 6% 5% 4%;
   }
 }
 .mainHeader .cta .header-links .app {
@@ -274,14 +274,20 @@ footer nav a {
   margin: 5% auto;
   border-radius: 10px;
   background-color: white;
+  line-height: 1.5;
   box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
 }
 .description h2 {
   font-size: 3rem;
 }
+@media ( max-width: 500px ) {
+  .description h2 {
+    font-size: 2.5rem;
+  }
+}
 .description .copy {
   font-size: 1.3rem;
-  margin-bottom: 3%;
+  margin-bottom: 4%;
 }
 .description ul {
   list-style-position: inside;
