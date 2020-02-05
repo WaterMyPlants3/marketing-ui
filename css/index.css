@@ -14,7 +14,7 @@
   box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
   max-height: 360px;
   width: 45%;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin: 2% 0;
   border-radius: 10px;
 }
@@ -231,7 +231,7 @@ footer nav {
 footer nav a {
   text-decoration: none;
   color: black;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin: 0 10%;
 }
 .description {
@@ -246,13 +246,13 @@ footer nav a {
   font-size: 1.8rem;
 }
 .description p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 .description ul {
   list-style-position: inside;
 }
 .description ul li {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 .testimonials {
   width: 100%;
@@ -264,7 +264,7 @@ footer nav a {
   box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
   max-height: 360px;
   width: 45%;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin: 2% 0;
   border-radius: 10px;
 }
@@ -286,7 +286,7 @@ footer nav a {
   box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
   max-height: 360px;
   width: 45%;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin: 2% 0;
   border-radius: 10px;
   background-color: white;
@@ -296,6 +296,19 @@ footer nav a {
   .testimonials .review {
     width: 95%;
   }
+}
+.testimonials .review p {
+  line-height: 1.5;
+}
+.testimonials .review .rating {
+  width: 100%;
+  text-align: center;
+  margin: 10% auto 0;
+  height: 40px;
+}
+.testimonials .review .rating i {
+  font-size: 2rem;
+  color: orange;
 }
 .testimonials .review .reviewer {
   display: flex;
