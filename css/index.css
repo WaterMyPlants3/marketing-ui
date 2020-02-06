@@ -167,6 +167,9 @@ body {
     justify-content: space-evenly;
   }
 }
+.mainHeader nav .current {
+  text-decoration: underline;
+}
 .mainHeader nav a {
   text-decoration: none;
   color: black;
@@ -293,6 +296,9 @@ footer nav {
   width: 25%;
   display: flex;
   justify-content: space-around;
+}
+footer nav .current {
+  text-decoration: underline;
 }
 footer nav a {
   white-space: nowrap;
