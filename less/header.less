@@ -67,6 +67,12 @@
                 font-size: @button-text;
                 text-decoration: none;
                 .button-shadow();
+                &:hover {
+                    background-color: lighten(@button-background, 20%);
+                }
+                &:active {
+                    background-color: lighten(@button-background, 10%);
+                }
                 @media @mobile {
                     padding: 6% 5% 4%;
                 }
@@ -76,6 +82,10 @@
                 @media @mobile {
                     width: 70%;
                     margin: 2% auto;
+                }
+                img {
+                    border-radius: 7px;
+                    .button-shadow();
                 }
             }
         }

@@ -238,6 +238,12 @@ body {
 .mainHeader .cta .header-links .webapp:active {
   box-shadow: none;
 }
+.mainHeader .cta .header-links .webapp:hover {
+  background-color: #77ab74;
+}
+.mainHeader .cta .header-links .webapp:active {
+  background-color: #5c9359;
+}
 @media ( max-width: 500px ) {
   .mainHeader .cta .header-links .webapp {
     padding: 6% 5% 4%;
@@ -251,6 +257,13 @@ body {
     width: 70%;
     margin: 2% auto;
   }
+}
+.mainHeader .cta .header-links .app img {
+  border-radius: 7px;
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
+}
+.mainHeader .cta .header-links .app img:active {
+  box-shadow: none;
 }
 footer {
   width: 100%;
