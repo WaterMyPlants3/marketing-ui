@@ -265,6 +265,12 @@ body {
 .mainHeader .cta .header-links .app img:active {
   box-shadow: none;
 }
+.mainHeader .cta .header-links .app img:hover {
+  filter: brightness(1.1);
+}
+.mainHeader .cta .header-links .app img:active {
+  filter: none;
+}
 footer {
   width: 100%;
   display: flex;
