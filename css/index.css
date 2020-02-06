@@ -260,6 +260,7 @@ body {
 }
 .mainHeader .cta .header-links .app img {
   border-radius: 7px;
+  border: 1px solid black;
   box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
 }
 .mainHeader .cta .header-links .app img:active {
