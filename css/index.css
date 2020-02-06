@@ -24,6 +24,12 @@
   margin: 2% 0;
   border-radius: 10px;
 }
+@media ( max-width: 800px ) {
+  .review-box-mixin {
+    font-size: 1.2rem;
+    max-height: 340px;
+  }
+}
 @media ( max-width: 500px ) {
   .review-box-mixin {
     width: 95%;
@@ -381,6 +387,12 @@ footer nav a:hover {
   margin: 2% 0;
   border-radius: 10px;
 }
+@media ( max-width: 800px ) {
+  .testimonials .review-image {
+    font-size: 1.2rem;
+    max-height: 340px;
+  }
+}
 @media ( max-width: 500px ) {
   .testimonials .review-image {
     width: 95%;
@@ -405,6 +417,12 @@ footer nav a:hover {
   background-color: white;
   padding: 2% 2%;
 }
+@media ( max-width: 800px ) {
+  .testimonials .review {
+    font-size: 1.2rem;
+    max-height: 340px;
+  }
+}
 @media ( max-width: 500px ) {
   .testimonials .review {
     width: 95%;
@@ -419,9 +437,14 @@ footer nav a:hover {
   margin: 5% auto 0;
   height: 40px;
 }
+@media ( max-width: 800px ) {
+  .testimonials .review .rating {
+    margin: 2% auto;
+  }
+}
 @media ( max-width: 500px ) {
   .testimonials .review .rating {
-    margin: 5% auto 2%;
+    margin: 4% auto 2%;
   }
 }
 .testimonials .review .rating i {
