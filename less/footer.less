@@ -6,6 +6,11 @@ footer {
     background-color: @box-background;
     p {
         margin: 0 0 1%;
+        a {
+            text-decoration: none;
+            color: inherit;
+            .hover-link();
+        }
     }
     nav {
         width: 25%;
@@ -17,6 +22,7 @@ footer {
             color: @text-color;
             font-size: @main-text;
             margin: 3% 10%;
+            .hover-link()
         }
     }
 }

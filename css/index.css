@@ -10,6 +10,9 @@
 .button-shadow:active {
   box-shadow: none;
 }
+.hover-link:hover {
+  color: grey;
+}
 .container-shadow {
   box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.5), -2px 0px 3px rgba(0, 0, 0, 0.5);
 }
@@ -170,6 +173,9 @@ body {
   margin: 0 2%;
   font-size: 1.5rem;
 }
+.mainHeader nav a:hover {
+  color: grey;
+}
 .mainHeader nav a:first-child {
   margin-left: 3%;
 }
@@ -256,6 +262,13 @@ footer {
 footer p {
   margin: 0 0 1%;
 }
+footer p a {
+  text-decoration: none;
+  color: inherit;
+}
+footer p a:hover {
+  color: grey;
+}
 footer nav {
   width: 25%;
   display: flex;
@@ -267,6 +280,9 @@ footer nav a {
   color: black;
   font-size: 1.3rem;
   margin: 3% 10%;
+}
+footer nav a:hover {
+  color: grey;
 }
 .description {
   padding: 4%;
