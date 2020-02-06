@@ -17,6 +17,7 @@
             color: @text-color;
             margin: 0 2%;
             font-size: @nav-text;
+            transition: 0.3s ease all;
             .hover-link();
             &:first-child {
                 margin-left: 3%;
@@ -69,15 +70,34 @@
                 color: @button-text-color;
                 font-size: @button-text;
                 text-decoration: none;
+                transition: 0.3s ease all;
                 .button-shadow();
+                p {
+                    display: block;
+                    width: 60%;
+                    margin: 0 auto;
+                    border-bottom: 2px solid transparent;
+                    transition: 0.3s ease all;
+                    @media @tablet {
+                        width: 100%;
+                        display: inline;
+                        border: none;
+                    }
+                }
                 &:hover {
                     background-color: lighten(@button-background, 20%);
+                    p {
+                        border-bottom: @button-text-color 2px solid;
+                        @media @tablet {
+                            border-bottom: none;
+                        }
+                    }                    
                 }
                 &:active {
                     background-color: lighten(@button-background, 10%);
                 }
                 @media @mobile {
-                    padding: 6% 5% 4%;
+                    padding: 7% 5% 4%;
                 }
             }
             .app {
@@ -90,8 +110,10 @@
                     border-radius: 7px;
                     border: 1px solid black;
                     .button-shadow();
+                    filter: none;
+                    transition: 0.2s ease all;
                     &:hover {
-                        filter: brightness(1.1)
+                        filter: brightness(1.2)
                     }
                     &:active {
                         filter: none;

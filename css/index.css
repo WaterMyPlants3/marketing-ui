@@ -133,6 +133,10 @@ video {
   font-display: swap;
   src: local('Josefin Sans Regular'), local('JosefinSans-Regular'), url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3aZQNVED7rKGKxtqIqX5EUDXx9.ttf) format('truetype');
 }
+::selection {
+  color: white;
+  background-color: green;
+}
 h1,
 h2 {
   font-family: 'Amatic SC', cursive;
@@ -175,6 +179,7 @@ body {
   color: black;
   margin: 0 2%;
   font-size: 1.5rem;
+  transition: 0.3s ease all;
 }
 .mainHeader nav a:hover {
   color: grey;
@@ -236,20 +241,43 @@ body {
   color: white;
   font-size: 2rem;
   text-decoration: none;
+  transition: 0.3s ease all;
   box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
 }
 .mainHeader .cta .header-links .webapp:active {
   box-shadow: none;
 }
+.mainHeader .cta .header-links .webapp p {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s ease all;
+}
+@media ( max-width: 800px ) {
+  .mainHeader .cta .header-links .webapp p {
+    width: 100%;
+    display: inline;
+    border: none;
+  }
+}
 .mainHeader .cta .header-links .webapp:hover {
   background-color: #77ab74;
+}
+.mainHeader .cta .header-links .webapp:hover p {
+  border-bottom: white 2px solid;
+}
+@media ( max-width: 800px ) {
+  .mainHeader .cta .header-links .webapp:hover p {
+    border-bottom: none;
+  }
 }
 .mainHeader .cta .header-links .webapp:active {
   background-color: #5c9359;
 }
 @media ( max-width: 500px ) {
   .mainHeader .cta .header-links .webapp {
-    padding: 6% 5% 4%;
+    padding: 7% 5% 4%;
   }
 }
 .mainHeader .cta .header-links .app {
@@ -265,12 +293,14 @@ body {
   border-radius: 7px;
   border: 1px solid black;
   box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
+  filter: none;
+  transition: 0.2s ease all;
 }
 .mainHeader .cta .header-links .app img:active {
   box-shadow: none;
 }
 .mainHeader .cta .header-links .app img:hover {
-  filter: brightness(1.1);
+  filter: brightness(1.2);
 }
 .mainHeader .cta .header-links .app img:active {
   filter: none;
